@@ -236,27 +236,36 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 5%;
+  padding: ;
   margin: 0;
 }
 
 .background-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: ;
-  height: 80%;
+  max-height: ;
   align-items: center;
-  padding: 2.5%;
+  padding: ;
   background: hsl(0, 0%, 100%);
   justify-content: space-evenly;
   border-radius: 20px;
   box-shadow: 2px 8px 14px -6px gray;
-  max-width: 338px;
-  max-height: 550px;
+  max-width: 261px;
 }
 
-img {
+.qr-img {
+  background-image: url('https://i.postimg.cc/FFT68fKT/image-qr-code.png');
+  background-size: 100%;
+  width: ;
+  height: ;
+  min-width: 207px;
+  max-width: 207px;
+  min-height: 207px;
+  max-height: 207px;
   border-radius: 20px;
+  margin-top: 1em;
 }
 
 .text {
@@ -290,6 +299,24 @@ p {
 }
 
 
-  @media screen and min-width(376px) {
+  @media screen and (min-width:376px) {
 
+   /*
+   Not sure about incorporating the gray patterned background as seen in the image example for the desktop version.
+   */
+   /*
+   body {
+      height: 100vh;
+      width: 100vw;
+      padding: 20% 10%;
+      background-image: url('../images/favicon-32x32.png');
+      background-size: 20%;
+    }
+
+    main {
+      box-shadow: 6px 12px 10px 6px hsla(155, 15%, 75%, 45%);
+      width: 80vw;
+      height: 90vh;
+    }
+/*
   }
